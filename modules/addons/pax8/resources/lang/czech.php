@@ -1,3 +1,5 @@
+<?php
+
 $_LANG['pax8'] = [
     'organisation_id_required'                               => 'Nezadali jste daňové identifikační číslo, které je vyžadováno pro objednání produktů Microsoft ve vaší zemi',
     'non_profit_message'                                     => 'Pro objednání produktů určených pro neziskové organizace prostřednictvím programu CSP je nutné nejprve zřídit tenant u Microsoftu. <a target="_blank" href=https://nonprofit.microsoft.com/register>Proces registrace neziskové organizace u Microsoftu</a>',
