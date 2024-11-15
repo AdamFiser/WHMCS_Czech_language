@@ -26,6 +26,11 @@ return [
         'available_departments'         => 'Dostupné oddělení',
         'select_file'                   => 'Vybrat soubor',
         'no_file_selected'              => 'Žádný soubor nevybrán',
+		'sensitive_data'                => 'Citlivá data',
+		'sensitive_data_ticket'         => 'Citlivá data pro tiket',
+		'sensitive_data_ticket_desc'    => 'Použijte toto pole pro vložení citlivých údajů, jako jsou přístupy k SFTP/FTP, přihlašovací údaje do administrace WHMCS, atd. <strong>Data vložená do tohoto pole budou bezpečně uložena a zašifrována.</strong> Toto pole budete moci upravit nebo odstranit na stránce tiketu.'															
+																   
+																																																																								   
     ],
     
     'billing' => [
