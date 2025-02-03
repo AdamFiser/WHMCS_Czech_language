@@ -27,7 +27,7 @@ $_LANG['dns_txt_info'] = "Následující kroky vytvoří záznam TXT.<br/>
 
     1. Jako typ záznamu zvolte TXT.<br/>
     2. Do pole Jméno/Hostitel/Alias zadejte @ nebo nechte prázdné. Vaše ostatní DNS záznamy mohou určit, kterou možnost byste měli použít.<br/>
-    3. Do pole Čas na živobytí (TTL) zadejte 3600 nebo nechte výchozí hodnotu.<br/>
+    3. Do pole Čas životnosti (TTL) zadejte 3600 nebo nechte výchozí hodnotu.<br/>
     4. Do pole Hodnota/Odpověď/Destinace vložte tuto hodnotu: %txtrecord%.<br/>
     5. Uložte záznam.
 ";
@@ -168,53 +168,55 @@ $_LANG['sslupdateapprovalbtn'] = "Aktualizovat";
 $_LANG['sslupdateapprovalsuccessmsg'] = "Metoda ověření byla úspěšně aktualizována";
 
 
-//cWatch Products
-$_LANG['cWatchGenerateLicense'] = "Generate License Key";
-$_LANG['sslGetLicenseTitle'] = "Get License";
-$_LANG['sslUpdateSiteTitle'] = "Update Site";
-$_LANG['sslDomainInfoTitle'] = "Domain Information";
-$_LANG['sslDomainName'] = "Domain";
-$_LANG['cWatchConfigCompleteDetails'] = "You’ve successfully claimed your cWatch Web license key(<strong>%licensekey%</strong>)! Our system is now working on setting up your website on the cWatch Web platform. Shortly, you should receive an email containing a unique link to set your password to login to the cWatch Web portal and complete setup. Download our guide below for help with your next steps setting up cWatch Web!<br /><br /><a href='https://certificategeneration.com/pdf/cWatch_Onboarding_Guide.pdf' target='_blank' class='btn btn-default'>Download cWatch Guide</a>";
-$_LANG['sslLicenseKey'] = "License Key";
-$_LANG['cwatchProvisioningDate'] = 'License Provisioning Date';
-$_LANG['cwatchExpiryDate'] = 'License Expiry Date';
-$_LANG['adminCountry'] = 'Country';
-$_LANG['cWatchUpdateSitebtn'] = 'Update Site';
-$_LANG['cWatchUpgradeLicensebtn'] = 'Upgrade License';
-$_LANG['cWatchUpgradeLicenseTitle'] = "Upgrade License";
-$_LANG['cWatchAdminLicenseDetails'] = 'License Details';
-$_LANG['cwatchUpdateSiteSuccessmsg'] = "Site Updated Successfully";
-$_LANG['cWatchLogin'] = "Login to cWatch";
+//cWatch Produkty
+$_LANG['cWatchGenerateLicense'] = "Vygenerovat licenční klíč";
+$_LANG['sslGetLicenseTitle'] = "Získat licenci";
+$_LANG['sslUpdateSiteTitle'] = "Aktualizovat web";
+$_LANG['sslDomainInfoTitle'] = "Informace o doméně";
+$_LANG['sslDomainName'] = "Doména";
+$_LANG['cWatchConfigCompleteDetails'] = "Úspěšně jste získali licenční klíč cWatch Web (<strong>%licensekey%</strong>)! Náš systém nyní pracuje na nastavení vašeho webu na platformě cWatch Web. Brzy byste měli obdržet e-mail obsahující jedinečný odkaz pro nastavení hesla k přihlášení do portálu cWatch Web a dokončení nastavení. Stáhněte si níže uvedeného průvodce pro další kroky při nastavování cWatch Web!<br /><br /><a href='https://certificategeneration.com/pdf/cWatch_Onboarding_Guide.pdf' target='_blank' class='btn btn-default'>Stáhnout průvodce cWatch</a>";
+$_LANG['sslLicenseKey'] = "Licenční klíč";
+$_LANG['cwatchProvisioningDate'] = "Datum poskytnutí licence";
+$_LANG['cwatchExpiryDate'] = "Datum vypršení licence";
+$_LANG['adminCountry'] = "Země";
+$_LANG['cWatchUpdateSitebtn'] = "Aktualizovat web";
+$_LANG['cWatchUpgradeLicensebtn'] = "Upgradovat licenci";
+$_LANG['cWatchUpgradeLicenseTitle'] = "Upgrade licence";
+$_LANG['cWatchAdminLicenseDetails'] = "Podrobnosti o licenci";
+$_LANG['cwatchUpdateSiteSuccessmsg'] = "Web byl úspěšně aktualizován";
+$_LANG['cWatchLogin'] = "Přihlásit se do cWatch";
+
 
 //CodeGuard
-$_LANG['codeguardAdminSubscriptionDetails'] = "Subscription Details";
-$_LANG['codeguard_user_details'] = "User Details";
-//codeGuard Products
-$_LANG['codeGuardCreateUser'] = "Create Account";
-$_LANG['codeGuardConfigCompleteDetails'] = "<strong>Your CodeGuard Subscription is Now Active</strong><br/>We’ve instantly activated your CodeGuard license – you can now protect your website with the most dependable website backup, monitoring, and restoration solution on the web! You can set up CodeGuard in just 5 minutes.";
-$_LANG['codeGuardCancelRequest'] = "Cancel";
-$_LANG['codeGuardUserInfoTitle'] = "Update User Information";
-$_LANG['codeGuardUserName'] = "User Name";
-$_LANG['codeGuardUserEmail'] = "User Email";
-$_LANG['codeGuardSsoLink'] = "Access CodeGuard Dashboard";
-$_LANG['codeGuardOrderStatus'] = "Order Status";
-$_LANG['codeGuardSubscriptionStatus'] = "Subscription Status";
-$_LANG['codeGuardSubscriptionId'] = "Subscription ID";
-$_LANG['codeGuardStartDate'] = "Start Date";
-$_LANG['codeGuardEndDate'] = "End Date";
-$_LANG['codeGuardWebsiteList'] = "Website List";
-$_LANG['codeGuardWebsite'] = "Website";
-$_LANG['codeGuardLastBackup'] = "Last Backup";
-$_LANG['codeGuardWebsiteSize'] = "Size";
-$_LANG['codeGuardWebsiteStatus'] = "Status";
-$_LANG['codeGuardEditUser'] = "Edit User";
-$_LANG['codeGuardEditUserCompleteDetails'] = "Your CodeGuard User has been updated successfully.";
-$_LANG['codeGuardAdditionalUserLabel'] = "Additional Users";
-$_LANG['codeGuardAdditionalUserDesc'] = "You can grant access to additional users here. These users will be able to login via <strong>%cgloginurl%</strong>.";
-$_LANG['codeGuardAddAdditionalUser'] = "Click here to add a user.";
-$_LANG['codeGuardAdditionalUserInfoTitle'] = "Additional User Information";
-$_LANG['codeGuardAdditionalUserPassword'] = "Password";
-$_LANG['codeGuardAdditionalUserCompleteDetails'] = "Additional User has been added successfully.";
+$_LANG['codeguardAdminSubscriptionDetails'] = "Podrobnosti o předplatném";
+$_LANG['codeguard_user_details'] = "Podrobnosti o uživateli";
+//CodeGuard Produkty
+$_LANG['codeGuardCreateUser'] = "Vytvořit účet";
+$_LANG['codeGuardConfigCompleteDetails'] = "<strong>Vaše předplatné CodeGuard je nyní aktivní</strong><br/>Okamžitě jsme aktivovali vaši licenci CodeGuard – nyní můžete chránit svůj web nejspolehlivějším řešením pro zálohování, monitorování a obnovu webových stránek! Nastavení CodeGuard vám zabere jen 5 minut.";
+$_LANG['codeGuardCancelRequest'] = "Zrušit";
+$_LANG['codeGuardUserInfoTitle'] = "Aktualizace informací o uživateli";
+$_LANG['codeGuardUserName'] = "Uživatelské jméno";
+$_LANG['codeGuardUserEmail'] = "E-mail uživatele";
+$_LANG['codeGuardSsoLink'] = "Přístup k ovládacímu panelu CodeGuard";
+$_LANG['codeGuardOrderStatus'] = "Stav objednávky";
+$_LANG['codeGuardSubscriptionStatus'] = "Stav předplatného";
+$_LANG['codeGuardSubscriptionId'] = "ID předplatného";
+$_LANG['codeGuardStartDate'] = "Datum zahájení";
+$_LANG['codeGuardEndDate'] = "Datum ukončení";
+$_LANG['codeGuardWebsiteList'] = "Seznam webových stránek";
+$_LANG['codeGuardWebsite'] = "Webová stránka";
+$_LANG['codeGuardLastBackup'] = "Poslední záloha";
+$_LANG['codeGuardWebsiteSize'] = "Velikost";
+$_LANG['codeGuardWebsiteStatus'] = "Stav";
+$_LANG['codeGuardEditUser'] = "Upravit uživatele";
+$_LANG['codeGuardEditUserCompleteDetails'] = "Uživatel CodeGuard byl úspěšně aktualizován.";
+$_LANG['codeGuardAdditionalUserLabel'] = "Další uživatelé";
+$_LANG['codeGuardAdditionalUserDesc'] = "Zde můžete udělit přístup dalším uživatelům. Tito uživatelé se budou moci přihlásit přes <strong>%cgloginurl%</strong>.";
+$_LANG['codeGuardAddAdditionalUser'] = "Kliknutím zde přidáte uživatele.";
+$_LANG['codeGuardAdditionalUserInfoTitle'] = "Informace o dalším uživateli";
+$_LANG['codeGuardAdditionalUserPassword'] = "Heslo";
+$_LANG['codeGuardAdditionalUserCompleteDetails'] = "Další uživatel byl úspěšně přidán.";
+
 
 //AutoInstall Related
 $_LANG['generate_ssl'] = "Automatické generování";
@@ -244,10 +246,10 @@ $_LANG['ReissueSSLDomainLabel'] = "Doména/webové místo";
 $_LANG['download_pvtkey'] = "Stáhnout&nbsp;soukromý klíč";
 $_LANG['install_certificate'] = "Instalovat&nbsp;certifikát";
 $_LANG['auto_reissue_cert'] = "AutoSSL&nbsp;znovuvydání";
-$_LANG['autossl_reissue_tooltip'] = "<strong>AutoSSL Re-issue</strong> option is only available for WHM/cPanel servers, and automates the processes of CSR generation, verification when possible, and installation of the certificate. <strong>Re-issue Certificate</strong> option can be used for all other cases, and requires manual generation of the CSR and installation of the certificate.";
-$_LANG['autossl_pvtkey_tooltip'] = "Your Certificate Private Key is stored upon your cPanel Server and when clicked will be retrieved from the cPanel Server.";
-$_LANG['autossl_process_msg'] = "Please allow two to three minutes as we complete the generation, validation, and installation of your SSL Certificate.";
-$_LANG['nonHttpDownloadKeyError'] = "Sorry, you are currently not able to download your certificate’s key because you are not accessing the website using SSL. Please connect using HTTPS:// and try again.";
+$_LANG['autossl_reissue_tooltip'] = "<strong>Automatické znovuvydání SSL</strong> je dostupné pouze pro servery WHM/cPanel a automatizuje proces generování CSR, ověření (pokud je to možné) a instalaci certifikátu. Možnost <strong>Znovuvydat certifikát</strong> lze použít ve všech ostatních případech a vyžaduje ruční generování CSR a instalaci certifikátu.";
+$_LANG['autossl_pvtkey_tooltip'] = "Váš soukromý klíč certifikátu je uložen na vašem serveru s cPanel a po kliknutí bude načten ze serveru cPanel.";
+$_LANG['autossl_process_msg'] = "Dokončení generování, ověření a instalace vašeho SSL certifikátu může trvat dvě až tři minuty. Prosím, vyčkejte.";
+$_LANG['nonHttpDownloadKeyError'] = "Omlouváme se, ale aktuálně nemůžete stáhnout klíč svého certifikátu, protože nepřistupujete na webovou stránku přes SSL. Připojte se pomocí HTTPS:// a zkuste to znovu.";
 
 //Digicert Products
 $_LANG['newOrgDetails'] = "Vytvořit novou organizaci";
