@@ -5,9 +5,11 @@ if (!defined("WHMCS")) {
 $_LANG['certificate_details'] = "Detaily certifikátu";
 $_LANG['sslstatus'] = "Stav objednávky";
 $_LANG['ssl_store_orderid'] = "ID objednávky v obchodě";
+$_LANG['ssl_order_date'] = "Datum objednávky";
 $_LANG['ssl_provisioning_date'] = "Datum zprovoznění SSL";
 $_LANG['ssl_expiry_date'] = "Datum expirace SSL";
 $_LANG['order_expiry_date'] = "Datum expirace objednávky";
+$_LANG['clientareahostingregdate'] = "Datum objednávky";
 $_LANG['ssl_vendor_status'] = "Stav u dodavatele";
 $_LANG['ssl_product_name'] = "Název produktu";
 $_LANG['ssl_vendor_orderid'] = "ID objednávky u dodavatele";
@@ -23,6 +25,22 @@ $_LANG['cname_details'] = "Detaily DNS";
 $_LANG['certificate_delivery_method'] = "Metoda doručení certifikátu";
 $_LANG['cname_dns'] = "Hostitel";
 $_LANG['cname_point_to'] = "Cíl";
+$_LANG['validation_status'] = "Stav ověření";
+$_LANG['validation_email'] = "Ověření e-mailem";
+$_LANG['validationemail_urlLabel'] = "E-mailová adresa:";
+$_LANG['validation_dns'] = "Ověření přes DNS";
+$_LANG['validationdns_urlLabel'] = "Hodnota TXT:";
+$_LANG['validationdns_URLContentLabel'] = "Název hostitele:";
+$_LANG['validation_http'] = "Ověření přes HTTP";
+$_LANG['validationhttp_urlLabel'] = "URL souboru:";
+$_LANG['validationhttp_URLContentLabel'] = "Obsah souboru";
+$_LANG['validation_https'] = "Ověření přes HTTPS";
+$_LANG['validationhttps_urlLabel'] = "URL souboru:";
+$_LANG['validationhttps_URLContentLabel'] = "Obsah souboru";
+$_LANG['validation_cname'] = "Ověření přes CNAME";
+$_LANG['validationcname_urlLabel'] = "Alias/název hostitele:";
+$_LANG['validationcname_URLContentLabel'] = "Směřuje na:";
+$_LANG['authMethod'] = "Metoda ověření";
 $_LANG['dns_txt_info'] = "Následující kroky vytvoří záznam TXT.<br/>
 
     1. Jako typ záznamu zvolte TXT.<br/>
@@ -77,6 +95,8 @@ $_LANG['sslstore_custom_phrase_sslcertapproveremaildetails'] = "V tomto kroku mu
 $_LANG['sslstore_custom_phrase_sslcertapproveremaildetails_with_filebased'] = "V tomto kroku musíte prokázat, že máte skutečně kontrolu nad doménou, kterou se snažíte zabezpečit. Můžete si vybrat ze tří možností uvedených níže: <b>Ověření pomocí souboru</b> nebo <b>Ověření pomocí CNAME</b> nebo <b>Email pro schválení certifikátu.</b><br /><br />Pokud si vyberete metodu <b>Ověření pomocí souboru</b>, dodavatel (CA) vám poskytne soubor, který umístíte na svůj server. Jméno i obsah souboru vám bude poskytnut v posledním kroku tohoto procesu. Jakmile bude soubor umístěn, dodavatel se pokusí soubor pingovat, aby ověřil kontrolu nad doménou. <br /><br />Pokud si vyberete možnost <b>Ověření pomocí CNAME</b>, dodavatel (CA) vám poskytne dva jedinečné hašovací hodnoty, které zadáte jako záznam CNAME v DNS domény. Pokud je to správně provedeno, dodavatel může záznam zobrazit pomocí vyhledávání DNS a vystavit certifikát po potvrzení. Tyto dvě jedinečné hašovací hodnoty vám budou poskytnuty v posledním kroku procesu. <br/><br/>Pokud si vyberete možnost <b>Email pro schválení certifikátu</b>, můžete si vybrat z následujících předem autorizovaných emailových adres spojených s vaší doménou. Na tuto adresu obdržíte email, který musí být dokončen, aby mohl dodavatel (CA) certifikát vystavit.";
 $_LANG['sslstore_custom_phrase_certapproveremaildetails_san'] = "<br /><br />Například, pokud je vybrán schvalovací email \"admin@\" a hlavní název je určen jako \"domain.com\" a doplňková (SAN) doména je \"sub.domain1.com\", schvalovací emaily budou odeslány na admin@domain.com a admin@sub.domain1.com.<br/><br/> Schvalovací email můžete později změnit ve svém ovládacím panelu pomocí možnosti \"Změnit schvalovací email\" na stránce detailů objednávky.";
 $_LANG['sslstore_authtxt_sslconfigcompletedetails'] = 'Pro ověření pomocí souboru, vytvořte strukturu složek "/.well-known/pki-validation/" v kořenovém adresáři a vytvořte soubor s následujícími detaily, nebo stáhněte ověřovací soubor kliknutím na tlačítko "Stáhnout ověřovací soubor" a umístěte jej do "/.well-known/pki-validation/" na HTTP serveru, jako například: %authfileurl%.<br />Ověření souboru může trvat nějakou dobu a certifikát může být vystaven certifikační autoritou po automatickém ověření.<br /><br /><b>Název souboru : </b>%filename%<br /><b>Obsah souboru : </b>%content%<br /><br />%authfile%<br />';
+$_LANG['sslstore_validated'] = "Ověřeno";
+$_LANG['sslstore_not_validated'] = "Neověřeno";
 
 
 $_LANG['sslconfigcompletedetails'] = "Proces generování vašeho SSL certifikátu byl nyní dokončen a odeslán certifikační autoritě ke kontrole. Pokud by byly jakékoli dotazy nebo problémy, certifikační autorita se obrátí na administrativního kontakt, aby vyjasnila a vyřešila situaci.";
